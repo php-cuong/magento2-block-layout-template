@@ -1,0 +1,10 @@
+<?php if (!empty($block->getProductNameList())): ?>
+    <h2><?php echo count($block->getProductNameList()); ?> the latest simple product.</h2>
+    <ol>
+    <?php foreach ($block->getProductNameList() as $product): ?>
+        <li>
+            <?php echo $product['name']; ?>
+        </li>
+    <?php endforeach; ?>
+    </ol>
+<?php endif; ?>

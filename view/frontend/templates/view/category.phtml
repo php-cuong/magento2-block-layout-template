@@ -1,0 +1,12 @@
+<?php if (!empty($block->getProductCategories())): ?>
+    <h2>Category List</h2>
+    <ul>
+    <?php foreach ($block->getProductCategories() as $category): ?>
+        <li>
+            <a href="<?php echo $category['link']; ?>" target="_blank">
+                <?php echo $category['name']; ?>
+            </a>
+        </li>
+    <?php endforeach; ?>
+    </ul>
+<?php endif; ?>

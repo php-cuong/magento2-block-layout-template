@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2013-2017 Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="PHPCuong_Product::css/price-color.css"/>
+    </head>
+    <body>
+        <referenceBlock name="logo">
+            <arguments>
+                <argument name="logo_file" xsi:type="string">PHPCuong_Product::images/logo-giaphugroup-2.png</argument>
+            </arguments>
+        </referenceBlock>
+        <referenceContainer name="product.info.main">
+            <block class="PHPCuong\Product\Block\Product\CategoryList" name="phpcuongcateprolist" as="phpcuongcateprolist" template="PHPCuong_Product::view/category.phtml" after="product.info"/>
+        </referenceContainer>
+    </body>
+</page>
